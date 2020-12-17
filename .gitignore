@@ -63,4 +63,5 @@ $RECYCLE.BIN/
 
 
 docker/mysql/data
+docker/php/php.ini
 docker/phpmyadmin/

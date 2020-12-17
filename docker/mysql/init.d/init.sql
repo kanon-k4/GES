@@ -1,6 +1,6 @@
 USE ges;
 
-ALTER USER 'ginlab'@'%' IDENTIFIED WITH mysql_native_password BY 'ginlab';
+ALTER USER 'gesystem'@'%' IDENTIFIED WITH mysql_native_password BY 'gesystem';
 
 CREATE TABLE IF NOT EXISTS `enterlog`
 (
