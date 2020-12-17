@@ -24,3 +24,27 @@ function ClockF() {
 }
 
 setInterval('ClockF()',1000);
+
+
+function ChangeStatus(name) {
+    var res = confirm(name + "のステータスを変更します．");
+    if (res == true) {
+        //post
+        var form = document.createElement('form');
+        var request = document.createElement('input');
+
+        form.method = 'POST';
+        form.action = "/";
+        form.id = '';
+
+        request.id = 'name';
+        request.type = 'hidden';
+        request.name = 'name'
+        request.value = name;
+
+        form.appendChild(request);
+        document.body.appendChild(form);
+
+        form.submit();
+    }
+}

@@ -4,7 +4,7 @@
 function connectdb(){
     try {
 
-        $pdo = new PDO(
+        $db = new PDO(
                 'mysql:dbname=ges;host=mysql;charset=utf8mb4', 
                 'gesystem', 
                 'gesystem', 
@@ -12,6 +12,8 @@ function connectdb(){
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_EMULATE_PREPARES => false,
                 ]);
+
+        return $db;
 
     } catch (PDOException $e) {
 
@@ -24,7 +26,7 @@ function connectdb(){
     }
 }
 
-connectdb();
+connectdb($db);
 header('Content-Type: text/html; charset=utf-8');
 
 ?>
