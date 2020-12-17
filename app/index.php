@@ -1,3 +1,7 @@
+<?php
+require('connectdb.php');
+?>
+
 <!DOCTYPE html>
 <html lang = "ja">
 <head>
@@ -19,11 +23,31 @@
 		</div>
 	</header>
 
-	<div class="box" id="kyoshin">
-		<p>強震モニタ</p>
-		<iframe width="370" height="710" src="http://www.kmoni.bosai.go.jp" id="frame_kyoshin"></iframe>
-	</div>
-
+	<div class="box">
+		<p>M2</p>
+        <div class="online"><button>立命 太郎</button></div>
+        <div class="online"><button>立命 太郎</button></div>
+        <div class="offline"><button>立命 太郎</button></div>
+    </div>
+    
+	<div class="box">
+		<p>M1</p>
+        <div class="online"><button>立命 太郎</button></div>
+        <div class="offline"><button>立命 太郎</button></div>
+    </div>
+    
+    <div class="box">
+		<p>B4</p>
+        <div class="online"><button>立命 太郎</button></div>
+        <div class="offline"><button>立命 太郎</button></div>
+    </div>
+    
+    <div class="box">
+		<p>B3</p>
+        <div class="online"><button>立命 太郎</button></div>
+        <div class="offline"><button>立命 太郎</button></div>
+    </div>
+    
 </body>
 
 </html>

@@ -5,9 +5,9 @@ function connectdb(){
     try {
 
         $pdo = new PDO(
-                'mysql:dbname=mysql;host=mysql;charset=utf8mb4', 
-                'root', 
-                'root', 
+                'mysql:dbname=ges;host=mysql;charset=utf8mb4', 
+                'gesystem', 
+                'gesystem', 
                 [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_EMULATE_PREPARES => false,

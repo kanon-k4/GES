@@ -6,15 +6,17 @@ CREATE TABLE IF NOT EXISTS `enterlog`
 (
     id INTEGER AUTO_INCREMENT,
     date DATETIME NOT NULL,
-    name VARCHAR(128) NOT NULL,
     studentid VARCHAR(128) NOT NULL,
     enter INTEGER NOT NULL,
     PRIMARY KEY(id)
 );
 
-CREATE TABLE IF NOT EXISTS `inroom`
+CREATE TABLE IF NOT EXISTS `user`
 (
     studentid VARCHAR(128) NOT NULL,
-    date DATETIME NOT NULL,
+    grade VARCHAR(128) NOT NULL,
+    name VARCHAR(128) NOT NULL,
+    mail VARCHAR(128) NOT NULL,
+    inroom BOOLEAN not null default 0,
     PRIMARY KEY(studentid)
 );
