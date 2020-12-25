@@ -1,0 +1,7 @@
+<?php
+
+// MAIL SETTING
+$smtp_server = 'smtp.example.com';
+$from_address = 'ges@example.com';
+$system_name = 'GinLab Entrance System';
+$notice_address = 'user@example.com';
