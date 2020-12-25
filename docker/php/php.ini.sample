@@ -1,5 +1,0 @@
-[mail function]
-; http://php.net/smtp
-SMTP = smtp.xxxxx.com
-; http://php.net/smtp-port
-smtp_port = 587

@@ -61,7 +61,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-
+# APPS
 docker/mysql/data
-docker/php/php.ini
 docker/phpmyadmin/
+app/setting.php

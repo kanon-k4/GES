@@ -26,7 +26,7 @@ function updatestatus($studentid){
         $stmt->execute(array(':date' => $date, ':studentid' => $studentid, ':enter' => '1'));
         ## SEND MAIL
         require('sendmail.php');
-        sendmailtest();
+        sendmail($rows_user[0]['name'], $rows_user[0]['mail'], $date, TRUE);
 
     }else{
         # 退室処理
@@ -35,6 +35,9 @@ function updatestatus($studentid){
         ## ADD LOG
         $stmt = $db->prepare('INSERT INTO enterlog(date,studentid,enter) VALUES (:date,:studentid,:enter);');
         $stmt->execute(array(':date' => $date, ':studentid' => $studentid, ':enter' => '0'));
+        ## SEND MAIL
+        require('sendmail.php');
+        sendmail($rows_user[0]['name'], $rows_user[0]['mail'], $date, FALSE);
     }
 }
 
