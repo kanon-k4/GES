@@ -27,8 +27,8 @@ setInterval('ClockF()',1000);
 
 
 function ChangeStatus(name) {
-    var res = confirm(name + "のステータスを変更します．");
-    if (res == true) {
+    //var res = confirm(name + "のステータスを変更します．");
+    //if (res == true) {
         //post
         var form = document.createElement('form');
         var request = document.createElement('input');
@@ -46,5 +46,5 @@ function ChangeStatus(name) {
         document.body.appendChild(form);
 
         form.submit();
-    }
+    //}
 }

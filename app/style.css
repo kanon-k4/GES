@@ -61,7 +61,7 @@ ul{
 .siteheader p.title{
 	width:70%;
 	padding-left:32px;
-	font-size:40px;
+	font-size:30px;
 
 }
 .siteheader div.date{
@@ -73,13 +73,13 @@ ul{
 	BOX
 ------------------------------------------------------------------------------------- */
 .box{
-	width:350px;
+	width:200px;
 	float:left;
 	padding: 8px;
 	text-align:center;
 }
 .box p{
-	font-size:25px;
+	font-size:18px;
 	font-weight:600;
 	color:#0c419a;
 }
@@ -89,17 +89,17 @@ ul{
 }
 
 .online button{
-	font-size:30px;
+	font-size:20px;
 	font-weight:600;
-	padding: 8px;
+	padding: 3px;
 	margin: 8px;
 	background-color: chartreuse;
 }
 
 .offline button{
-	font-size:30px;
+	font-size:20px;
 	font-weight:600;
-	padding: 8px;
+	padding: 3px;
 	margin: 8px;
 	background-color: darkgrey;
 }
