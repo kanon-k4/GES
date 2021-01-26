@@ -5,3 +5,8 @@ $smtp_server = 'smtp.example.com';
 $from_address = 'ges@example.com';
 $system_name = 'GinLab Entrance System';
 $notice_address = 'user@example.com';
+
+// Slack SETTING
+$postslack_mode  = false;
+$slack_token = 'xoxb--------';
+$slack_channel = '#general';

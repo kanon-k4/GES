@@ -1,6 +1,8 @@
 <?php
 
 function updatestatus($studentid){
+    require 'setting.php';
+
     # CONNECT DB
     $db = connectdb();
 
@@ -27,6 +29,11 @@ function updatestatus($studentid){
         ## SEND MAIL
         require('sendmail.php');
         sendmail($rows_user[0]['name'], $rows_user[0]['mail'], $date, TRUE);
+        ## POST SLACK
+        require('postslack.php');
+        if($postslack_mode == true){
+            postslack($rows_user[0]['name'], $date, TRUE);
+        }
 
     }else{
         # 退室処理
@@ -38,6 +45,11 @@ function updatestatus($studentid){
         ## SEND MAIL
         require('sendmail.php');
         sendmail($rows_user[0]['name'], $rows_user[0]['mail'], $date, FALSE);
+        ## POST SLACK
+        require('postslack.php');
+        if($postslack_mode == true){
+            postslack($rows_user[0]['name'], $date, FALSE);
+        }
     }
 }
 
